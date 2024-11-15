@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Style for the main container */
+div {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  
+  /* Table header styling */
+  table thead th {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Table body styling */
+  table tbody td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Alternating row colors */
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hover effect */
+  table tbody tr:hover {
+    background-color: #ddd;
+    transition: background-color 0.3s;
+  }
+  
+  /* Responsive table for smaller screens */
+  @media (max-width: 600px) {
+    table {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
