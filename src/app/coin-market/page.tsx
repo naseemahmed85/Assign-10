@@ -17,7 +17,7 @@ interface CoinMarket{
 }
 
 export default function CoinMarket() {
-  const API_KEY = "d1da8a2d721d72850bc4127cf7bc4401";
+  const API_KEY = "6aba188fb9fcd35fe839c7994587b33a";
   const [data, setData] = useState<CoinMarket | null>(null);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function CoinMarket() {
         console.log("JSON Converted Data : ", jsonConverted);
         setData(jsonConverted);
       });
-  }, []);
+  }, []);  
 
   return (
     <div>
